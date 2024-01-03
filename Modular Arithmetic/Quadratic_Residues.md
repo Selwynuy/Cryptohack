@@ -29,3 +29,11 @@ We say that an integer x is a Quadratic Residue if there exists an a such that a
 If a2 = x then (-a)2 = x. So if x is a quadratic residue in some finite field, then there are always two solutions for a.
 
 ## Solution
+```
+n = 29
+ints = [14,6,11]
+
+qr = [i for i in range(1,29) if pow(i,2,n) in ints]
+print(f"flag: {min(qr)}")
+```
+Flag: 8
